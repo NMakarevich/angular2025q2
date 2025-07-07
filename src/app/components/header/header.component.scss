@@ -1,0 +1,47 @@
+@use '@angular/material' as mat;
+
+.mat-toolbar {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: unset;
+
+  @include mat.toolbar-overrides((
+    container-background-color: #810081,
+  ));
+
+  @include mat.expansion-overrides((
+    container-background-color: transparent,
+  ));
+}
+
+.logo {
+  width: 60px;
+  height: 40px;
+  margin-right: 15px;
+  background-image: url("../../../assets/logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.filter-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  &_control{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+}

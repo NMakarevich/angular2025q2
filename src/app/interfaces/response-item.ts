@@ -17,6 +17,7 @@ export interface ResponseItem {
       description: string;
     };
     defaultAudioLanguage: string;
+    defaultLanguage?: string;
   };
   statistics: {
     viewCount: string;

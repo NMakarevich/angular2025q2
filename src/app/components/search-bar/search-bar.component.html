@@ -1,1 +1,5 @@
-<p>search-bar works!</p>
+<mat-form-field>
+  <mat-label>Search videos</mat-label>
+  <input matInput [(ngModel)]="searchTerm">
+</mat-form-field>
+<app-button (click)="search()">Search</app-button>

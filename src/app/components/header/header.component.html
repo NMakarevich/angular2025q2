@@ -1,1 +1,24 @@
-<p>header works!</p>
+<header class="header">
+  <mat-toolbar>
+    <div class="header-main">
+      <span class="logo"></span>
+      <app-search-bar (passSearchResponse)="getSearchResponse($event)"></app-search-bar>
+      <app-auth></app-auth>
+    </div>
+    <div class="filter-panel">
+      <div class="filter-panel_control">
+        <span class="filter-panel_title">Show filter panel</span>
+        <app-button (click)="togglePanel()">
+          <mat-icon fontIcon="tune"></mat-icon>
+        </app-button>
+      </div>
+      <mat-expansion-panel>
+        <app-filters
+          [(filterTerm)]="filterTerm"
+          (setSortBy)="passSortBy($event)"
+        ></app-filters>
+      </mat-expansion-panel>
+    </div>
+  </mat-toolbar>
+</header>
+

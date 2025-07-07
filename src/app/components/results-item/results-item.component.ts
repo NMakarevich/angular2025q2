@@ -10,4 +10,5 @@ import { ResponseItem } from '../../interfaces/response-item';
 })
 export class ResultsItemComponent {
   responseItem = input<ResponseItem>();
+  protected readonly input = input;
 }
