@@ -3,12 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { SearchResponse } from './interfaces/search-response';
 import { HeaderComponent } from './components/header/header.component';
 import { ResultsListComponent } from './components/results-list/results-list.component';
-import { ColorizeByDateDirective } from './directives/colorize-by-date.directive';
 import { SortBy } from './interfaces/sort-by';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, ResultsListComponent, ColorizeByDateDirective],
+  imports: [RouterOutlet, HeaderComponent, ResultsListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   standalone: true,
