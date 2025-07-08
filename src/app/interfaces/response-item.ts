@@ -19,13 +19,15 @@ export interface ResponseItem {
     defaultAudioLanguage: string;
     defaultLanguage?: string;
   };
-  statistics: {
-    viewCount: string;
-    likeCount: string;
-    dislikeCount: string;
-    favoriteCount: string;
-    commentCount: string;
-  };
+  statistics: Statistics;
+}
+
+export interface Statistics {
+  viewCount: string;
+  likeCount: string;
+  dislikeCount: string;
+  favoriteCount: string;
+  commentCount: string;
 }
 
 interface ThumbnailProperties {
