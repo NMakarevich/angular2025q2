@@ -5,6 +5,7 @@ import { NgOptimizedImage } from '@angular/common';
 import { ButtonComponent } from '../ui/button/button.component';
 import { StatisticsComponent } from '../statistics/statistics.component';
 import { ColorizeByDateDirective } from '../../directives/colorize-by-date.directive';
+import { ShortTitlePipe } from '../../pipes/short-title.pipe';
 
 @Component({
   selector: 'app-results-item',
@@ -14,6 +15,7 @@ import { ColorizeByDateDirective } from '../../directives/colorize-by-date.direc
     ButtonComponent,
     StatisticsComponent,
     ColorizeByDateDirective,
+    ShortTitlePipe,
   ],
   templateUrl: './results-item.component.html',
   styleUrl: './results-item.component.scss',

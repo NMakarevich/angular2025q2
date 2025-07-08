@@ -1,6 +1,6 @@
 <mat-card class="card" [appColorizeByDate]="responseItem()?.snippet?.publishedAt!" [attribute]="'border'">
   <mat-card-header>
-    <mat-card-title>{{responseItem()?.snippet?.title}}</mat-card-title>
+    <mat-card-title>{{responseItem()?.snippet?.title | shortTitle}}</mat-card-title>
   </mat-card-header>
   <img mat-card-image [src]="responseItem()?.snippet?.thumbnails?.default?.url!" alt="">
   <mat-card-content>
